@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TASK</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+ 
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+
+
+
+
+    .main-content {
+      flex: 1;
+      padding: 1rem;
+      background-color: #fff;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .card {
+      flex: 1 1 calc(33.333% - 1rem);
+      background-color: #f9f9f9;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+
+    @media (max-width: 768px) {
+      .dashboard {
+        flex-direction: column;
+      }
+
+      .cards {
+        flex-direction: column;
+      }
+
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+
+
+    .toggle-button {
+      display: none;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+ 
+    <main class="main-content">
+      <section class="cards">
+        <div class="card">
+          <h2>Gerges</h2>
+          <p>This is the content of card</p>
+        </div>
+        <div class="card">
+          <h2>Malak</h2>
+          <p>This is the content of card</p>
+        </div>
+        <div class="card">
+          <h2>Farag</h2>
+          <p>This is the content of card</p>
+        </div>
+        <div class="card">
+            <h2>Mina</h2>
+            <p>This is the content of card</p>
+          </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
